@@ -1,0 +1,19 @@
+{
+  "name": "BaseDesktop",
+  "version": "1.0.0",
+  "description": "BaseDesktop is a versatile desktop application framework designed to provide foundational tools and features for streamlined development across various desktop platforms.",
+  "main": "src/main/main.ts",
+  "scripts": {
+    "build": "tsc && copyfiles -u 1 src/renderer/*.html dist/",
+    "start": "electron ./dist/main/main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dom",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/electron": "^1.6.10",
+    "copyfiles": "^2.4.1",
+    "electron": "^29.3.0",
+    "typescript": "^5.4.5"
+  }
+}
